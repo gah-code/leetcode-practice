@@ -20,7 +20,7 @@ export default [
     },
     rules: {
       semi: ['error', 'always'],
-      quotes: ['error', 'double'],
+      quotes: ['error', 'double'], // Use double quotes but allow escape
       'no-unused-vars': 'warn',
       'no-console': 'off', // Allow console logs for Quokka debugging
       'prefer-const': 'warn',

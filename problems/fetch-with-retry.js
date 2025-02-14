@@ -31,21 +31,21 @@
 async function fetchWithRetry(url, retries = 3) {
   for (let i = 0; i < retries; i++) {
     try {
-      let response = await fetch(url);
+      const response = await fetch(url);
       if (!response.ok) {
         throw new Error(`HTTP Error! Status: ${response.status}`);
       }
       return await response.json();
     } catch (error) {
       console.warn(`Attempt ${i + 1} failed:`, error);
-      if (i === retries - 1) return 'Fetch failed';
+      if (i === retries - 1) return "Fetch failed";
     }
   }
 }
 
 // Example usage (Runs instantly with Quokka)
-fetchWithRetry('https://jsonplaceholder.typicode.com/todos/1', 3)
-  .then((data) => console.log('Fetched Data:', data))
-  .catch((error) => console.error('Error:', error));
+fetchWithRetry("https://jsonplaceholder.typicode.com/todos/1", 3)
+  .then((data) => console.log("Fetched Data:", data))
+  .catch((error) => console.error("Error:", error));
 
 module.exports = fetchWithRetry;
