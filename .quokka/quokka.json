@@ -1,0 +1,14 @@
+{
+  "env": {
+    "QUOKKA_EVAL_DELAY": 50
+  },
+  "babel": true,
+  "plugins": ["babel-plugin-transform-modules-commonjs"],
+  "pro": {
+    "jest": true
+  },
+  "files": ["problems/**/*.js", "problems/**/*.test.js"],
+  "quokka": {
+    "ignore": ["node_modules"]
+  }
+}
