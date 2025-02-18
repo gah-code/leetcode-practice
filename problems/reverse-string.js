@@ -39,10 +39,13 @@ function reverseString(s) {
     left++;
     right--;
   }
+
   // Write your solution here
 }
 
-// Example usage
-// console.log(solution());
+// ✅ Example Usage
+let s1 = ['h', 'e', 'l', 'l', 'o'];
+reverseString(s1);
+console.log(s1);
 
 module.exports = reverseString;

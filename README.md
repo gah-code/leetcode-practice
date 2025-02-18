@@ -126,11 +126,16 @@ npm test
 
 ---
 
-## ✅ To-Do List & Future Enhancements 1.1.0
+## ✅ To-Do List & Future Enhancements V 1.1.0
 
 - [ ] **Auto-generate Jest test files** when creating new problems.
 - [ ] **Integrate Prettier** for automatic code formatting.
 - [ ] **Improve error handling** for the `new-problem.sh` script.
+
+---
+
+## ✅ To-Do List & Future Enhancements V 1.2.0
+
 - [ ] **Add TypeScript support** for stronger typing in solutions.
 - [ ] **Implement GitHub Actions** for continuous integration.
 - [ ] **Create a VS Code snippet extension** for inserting the problem template easily.
